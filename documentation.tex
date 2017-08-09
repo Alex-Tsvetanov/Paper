@@ -2,6 +2,7 @@
 \documentclass[a4paper, 12pt]{article}
 
 \usepackage{hyperref}
+\usepackage{pgf-pie}
 
 \hypersetup{
 	colorlinks,
@@ -39,8 +40,7 @@
 	\vspace{2\baselineskip}
 	
 	{\scshape \large
-		Under the direction of \\
-		ch. ace. Emil Kelevedjiev\\\&\\assoc. Zlatogor Minchev\\\par
+		Under the direction of \\assoc. Zlatogor Minchev\\\&\\ch. ace. Emil Kelevedjiev\\\par
 	}
 	\vspace{1cm}
 	
@@ -113,18 +113,30 @@
 			\subsubsection{Design}
 				Design is not ready yet, because it costs a lot of time until we design 3D object and until we implement all human facial expressions. 
 			\subsubsection{Communication}
+				The biggest problem in this part of the project is how to understand what the student want to know. It will be solved by "machine learning" where the data will be conversations between real students and teachers.
 	\section{Techniques}
 	\begin{itemize}
-		\item C++ for AI in combination with FastCGI++
-		\item ...
-		\item ...
+		\item C++ for AI in combination $\rightarrow$ FastCGI++ for the API
+		\item WebGL for rendering the 3D model of the teacher
+		\item MakeHuman for building the 3D model of the teacher
 	\end{itemize}
 	\section{Future}
+	Future development includes building a 3D model of the teacher and developing of the facial human expressions together with psychologists. 
+	It includes also improving "intelligence" of the teacher and applying the technology in school starting from Sofia Professional High School of Electronics "John Atanasov" and Sofia High School of Matematics "Paisii Hilendarski".
+	\\ \\
+	The diagram shows the results of non-representative survey conducted among 55 students of SHSM \\
+	\begin{center}
+		\begin{tikzpicture}
+			\pie[cloud, text=inside, scale font]{95/Yes, 3/No, 2/}
+		\end{tikzpicture}
+	\end{center}
+	\\
+	So those results stimulate us to make it better and better and to make it make more interesting, more interactive and more entertaining.
  	\section{Acknowledgments}
  	 	 Special thanks to:
  	 	 \begin{itemize}
  	 	 	\item Zlatogor Minchev for the improvement of the idea
- 	 	 	\item Emil Kelevejiev for the improvement of the project
+ 	 	 	\item Emil Kelevejiev for the improvement of the documentation
  	 	 \end{itemize}
  	 	 Thanks also to:
  	 	 \begin{itemize}
@@ -133,6 +145,27 @@
  	 	 	\item Sofia High School of Mathematics
  	 	 \end{itemize}
  	 	 \begin{thebibliography}{99}
+ 	 	 	\bibitem{virtobjects}
+ 	 	 	{\itshape Virtual objects seem totally real}.
+ 	 	 	\texttt{https://www.theverge.com/2017/8/1/16070188/\\
+ 	 	 	        avegant-light-field-display-ar-headset-next-level-video}. \\
+ 	 	 	\bibitem{Amelia}
+ 	 	 	{\itshape Amelia}.
+ 	 	 	\texttt{http://www.ipsoft.com/amelia/}. \\
+ 	 	 	\bibitem{The Future Of Chatbots And Artificial Intelligence}
+ 	 	 	{\itshape The Future Of Chatbots And Artificial Intelligence}.
+ 	 	 	\texttt{https://www.lifehacker.com.au/2016/05/meet-viv-the-future\\
+ 	 	 		-of-chatbots-and-artificial-intelligence/}. \\
+ 	 	 	
+ 	 	 	\bibitem{Your DNA Avatar – What Happens When Artificial Intelligence Meets Cutting-Edge Genetics?}
+ 	 	 	{\itshape Your DNA Avatar – What Happens When Artificial Intelligence Meets Cutting-Edge Genetics?}.
+ 	 	 	\texttt{https://www.wilsoncenter.org/blog-post/your-dna-avatar-\\
+ 	 	 		    what-happens-when-artificial-intelligence-meets-cutting-\\
+ 	 	 		    edge-genetics}. \\
+ 	 	 	
+ 	 	 	\bibitem{mariadb}
+ 	 	 	{\itshape MariaDB++}.
+ 	 	 	\texttt{https://mariadb.org/}. \\
  	 	 	\bibitem{gcc}
  	 	 	{\itshape GNU Compiler Collection}.
  	 	 	\texttt{https://gcc.gnu.org/}. \\
