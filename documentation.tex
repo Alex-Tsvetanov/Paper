@@ -40,7 +40,10 @@
 	\vspace{2\baselineskip}
 	
 	{\scshape \large
-		Under the direction of \\assoc. Zlatogor Minchev\\\&\\ch. ace. Emil Kelevedjiev\\\par
+		Under the direction of \\
+		\hspace{-0.3cm}\href{https://bg.linkedin.com/in/zlatogor-minchev-a101b85}{Assoc. Prof. Zlatogor Minchev} \\
+		\& \\
+		\hspace{-0.3cm}\href{https://bg.linkedin.com/in/emil-kelevedjiev-34727310b}{Assist. Prof. Emil Kelevedjiev} \\\par
 	}
 	\vspace{1cm}
 	
@@ -58,6 +61,13 @@
 	noparskip,breakable,
 	colback=LightGreen,colframe=DarkGreen,%
 	colbacklower=LimeGreen!75!LightGreen,%
+	title=#1]}%
+{\endtcolorbox}
+\newenvironment{myblocksecond}[1]{%
+	\tcolorbox[beamer,%
+	noparskip,breakable,
+	colback=Yellow,colframe=Brown,%
+	colbacklower=Brown!75!Yellow,%
 	title=#1]}%
 {\endtcolorbox}
 
@@ -86,6 +96,12 @@
 	\large{
 		\begin{myblock}{"Learning management system"}
 			It is a software application for the administration, documentation, tracking, reporting and delivery of educational courses or training programs.
+			\rule{\textwidth}{0.4pt}
+			{
+				\begin{flushright}
+					{\Large Wikipedia}
+				\end{flushright}
+			}
 		\end{myblock}
 		\vspace{1cm}
 		\begin{myblock}{"Artificial teacher"}
@@ -99,16 +115,19 @@
 		Teacher will train student by lessons and different types of exercises which will include theoretical part, but will mostly be oriented practically. 
 	}
 	\section{Implementation}
-		Our project is divided by two parts:
+		The project is divided into three parts:
 		\begin{itemize}
-			\item[beauty] Design, which must implement human facial expressions for better sense of reality. 
-			\item[intelligence] Application Public Interface that must return material which must be learnt by student
+			\item[appearance] Design, which must implement human facial expressions for better and realistic interactive communication. 
+			\item[intelligence] Application Programming Interface that must return material which must be learnt by student \\ \\ This interface uses data base to make information which will be used to build knowledge base where data base is simple data about how students visit resources and knowledge base is system of logical conditions.
 			\item[communication] Live bot chat for all questions during the lesson that "artificial teacher" presents. 
 		\end{itemize}
-		Each part has a lot of specifics and thus that this project is so hard, but it would give a different view of learning, a more modern look.
+		{\centering
+			\includegraphics[width=\textwidth]{schema.jpg}
+		}
+		Each part has a lot of specifics and the project is quite challenging, but it would give a different, modern outlook to the future learning process.
 		\subsection{Problems}
-			\subsubsection{Application Public Interface}
-				The most important thing when you develop artificial intelligence is that you must have enough data, which you will use for training of the AI. \\ \\
+			\subsubsection{Application Programming Interface}
+				The most important thing, when you develop artificial intelligence by Neural Networks, is that you must have enough information, which is performed as systematic organized data, that you will use as material for building knowledge base. \\ \\
 				Current training data is only sample data and it is not so formal, but is enough for start.
 			\subsubsection{Design}
 				Design is not ready yet, because it costs a lot of time until we design 3D object and until we implement all human facial expressions. 
@@ -120,18 +139,29 @@
 		\item WebGL for rendering the 3D model of the teacher
 		\item MakeHuman for building the 3D model of the teacher
 	\end{itemize}
+	\newpage
 	\section{Future}
+	\begin{wrapfigure}{l}{0.35\textwidth}
+		\includegraphics[scale=0.35]{bad_boy.png}
+	\end{wrapfigure}
 	Future development includes building a 3D model of the teacher and developing of the facial human expressions together with psychologists. 
-	It includes also improving "intelligence" of the teacher and applying the technology in school starting from Sofia Professional High School of Electronics "John Atanasov" and Sofia High School of Matematics "Paisii Hilendarski".
-	\\ \\
-	The diagram shows the results of non-representative survey conducted among 55 students of SHSM \\
+	It includes also improving "intelligence" of the teacher and applying the technology in school starting from Sofia Professional High School of Electronics "John Atanasov" and Sofia High School of Matematics "Paisii Hilendarski". \\ \vspace{0.5cm}
+	\begin{center}
+		\begin{myblocksecond}{Survey questions}
+			\begin{enumerate}
+				\item Do you support building an online learning system and using it in school?
+			\end{enumerate}
+		\end{myblocksecond}
+	\end{center}
+	The diagram shows the results of non-representative survey conducted among 55 students of SHSM: \\
 	\begin{center}
 		\begin{tikzpicture}
 			\pie[cloud, text=inside, scale font]{95/Yes, 3/No, 2/}
 		\end{tikzpicture}
 	\end{center}
-	\\
+
 	So those results stimulate us to make it better and better and to make it make more interesting, more interactive and more entertaining.
+%	\newpage
  	\section{Acknowledgments}
  	 	 Special thanks to:
  	 	 \begin{itemize}
@@ -145,10 +175,13 @@
  	 	 	\item Sofia High School of Mathematics
  	 	 \end{itemize}
  	 	 \begin{thebibliography}{99}
- 	 	 	\bibitem{virtobjects}
- 	 	 	{\itshape Virtual objects seem totally real}.
- 	 	 	\texttt{https://www.theverge.com/2017/8/1/16070188/\\
- 	 	 	        avegant-light-field-display-ar-headset-next-level-video}. \\
+ 	 	 	\bibitem{book1}
+ 	 	 	{\itshape Artificial Intelligence: A Modern Approach, \\ 3rd Edition, Prentice Hall, 2010}. \\
+ 	 	 	\texttt{Stuart Russell \& Peter Norvig.} \\
+  	 	    \bibitem{virtobjects}
+   	        {\itshape Virtual\ objects\ seem\ totally\ real}.
+            \texttt{https://www.theverge.com/2017/8/1/16070188/\\
+            avegant-light-field-display-ar-headset-next-level-video}. \\
  	 	 	\bibitem{Amelia}
  	 	 	{\itshape Amelia}.
  	 	 	\texttt{http://www.ipsoft.com/amelia/}. \\
@@ -158,12 +191,12 @@
  	 	 		-of-chatbots-and-artificial-intelligence/}. \\
  	 	 	
  	 	 	\bibitem{Your DNA Avatar – What Happens When Artificial Intelligence Meets Cutting-Edge Genetics?}
- 	 	 	{\itshape Your DNA Avatar – What Happens When Artificial Intelligence Meets Cutting-Edge Genetics?}.
+ 	 	 	{\itshape Your DNA Avatar - What Happens When Artificial Intelligence Meets Cutting-Edge Genetics?}.
  	 	 	\texttt{https://www.wilsoncenter.org/blog-post/your-dna-avatar-\\
  	 	 		    what-happens-when-artificial-intelligence-meets-cutting-\\
  	 	 		    edge-genetics}. \\
  	 	 	
- 	 	 	\bibitem{mariadb}
+ 	 	 	\bibitem{mariadbpp}
  	 	 	{\itshape MariaDB++}.
  	 	 	\texttt{https://mariadb.org/}. \\
  	 	 	\bibitem{gcc}
